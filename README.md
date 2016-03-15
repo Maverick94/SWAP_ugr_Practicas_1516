@@ -6,7 +6,7 @@ Respositorio donde voy a desarrollar la asignatura.
 
 ###Prácticas
 
-*[Práctica 1]
-*[Práctica 2]
+* [Práctica 1](https://github.com/Maverick94/swap1516/tree/master/practicas/practica1)
+* [Práctica 2](https://github.com/Maverick94/swap1516/tree/master/practicas/practica2)
 
 ###Trabajos/Ejercicios
