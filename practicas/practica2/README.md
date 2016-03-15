@@ -4,16 +4,16 @@
 
 Lo primero que vamos a hacer es instalar *Ubuntu server 14.04* en dos máquinas virtuales. Yo he usado *VirtualBox*.
 
-![Alt Text](https://github.com/Maverick94/swap1516/blob/master/practica2/imagenes/M1C1.png "Instalando las máquinas")
+![Alt Text](https://github.com/Maverick94/swap1516/blob/master/practicas/practica2/imagenes/M1C1.png "Instalando las máquinas")
 
 Una vez instaladas, nos logueamos en ellas:
 
-![M1M2C1](https://github.com/Maverick94/swap1516/blob/master/practica2/imagenes/M1M2C1.png)
+![M1M2C1](https://github.com/Maverick94/swap1516/blob/master/practicas/practica2/imagenes/M1M2C1.png)
 
 y vamos a ver si se ven entre ellas con el comando `ifconfig`
 
 
-![M1M2C2](https://github.com/Maverick94/swap1516/blob/master/practica2/imagenes/M1M2C2.png)
+![M1M2C2](https://github.com/Maverick94/swap1516/blob/master/practicas/practica2/imagenes/M1M2C2.png)
 
 Vemos que tienen la misma IP así que vamos a utilizar el material proporcionado por el profesor para arregarlo.
 
@@ -22,14 +22,14 @@ Vemos que tienen la misma IP así que vamos a utilizar el material proporcionado
 Una vez arreglado el conflicto, vemos que , con la herramienta ping, mis máquinas ya se ven entre ellas
 
 
-![C4](https://github.com/Maverick94/swap1516/blob/master/practica2/imagenes/C4.png)
+![C4](https://github.com/Maverick94/swap1516/blob/master/practicas/practica2/imagenes/C4.png)
 
 donde máquina 1 tiene por IP: 192.168.1.100 y máquina 2 tiene por IP: 192.168.1.102
 
 
 Ahora procedemos a la práctica en sí. En el directorio de la máquina 1 `/var/www/` he creado una carpeta que se llama `pruebaCopia`
 
-![C5](https://github.com/Maverick94/swap1516/blob/master/practica2/imagenes/C5.png)
+![C5](https://github.com/Maverick94/swap1516/blob/master/practicas/practica2/imagenes/C5.png)
 
 con el objetivo de comprobar que se va a copiar en la máquina 2 mediante la herramienta `rsync` ya que la opción de:
 
@@ -42,7 +42,7 @@ Para ello tecleo en la máquina 2 el comando:
 para copiar la carpeta `pruebaCopia` de la máquina 1 a la máquina 2
 
 
-![C6](https://github.com/Maverick94/swap1516/blob/master/practica2/imagenes/C6.png)
+![C6](https://github.com/Maverick94/swap1516/blob/master/practicas/practica2/imagenes/C6.png)
 
 
 Puesto que la máquina 1 va a ser el servidor principal y que vamos a automatizar el proceso con el crontab, necesitaremos un acceso sin contraseña para ssh desde la máquina 2. Si no, un administrador tendría que estar pendiente de la máquina 2 para teclear la contraseña cada vez que se quiera hacer una copia. Esto último no nos interesa, ya que perdería toda la eficacia.
@@ -51,7 +51,7 @@ Vamos a generar el acceso sin contraseña para ssh desde la máquina 2. Realment
 
 Usamos el comando `ssh-keygen -t dsa` para crearla.
 
-![C7](https://github.com/Maverick94/swap1516/blob/master/practica2/imagenes/C7.png)
+![C7](https://github.com/Maverick94/swap1516/blob/master/practicas/practica2/imagenes/C7.png)
 
 
 Utilizando el comando `chmod 600 ~/.ssh/authorized_keys` le estaremos dando los permisos que necesita. Por defecto sale con esos permisos dados pero yo ejecuto el comando de nuevo por si acaso...
@@ -63,13 +63,13 @@ nos pedirá la contraseña del root de la máquina 1. Cuando se la demos, ya pod
 
 Hacemos la prueba.
 
-![C8](https://github.com/Maverick94/swap1516/blob/master/practica2/imagenes/C8.png)
+![C8](https://github.com/Maverick94/swap1516/blob/master/practicas/practica2/imagenes/C8.png)
 
 Por lo tanto, ya podemos automatizar el proceso de copia del contenido `/var/www` desde la máquina 1 hacia la máquina 2 con `crontab`
 
 Accedemos a crontab con el comando `nano /etc/crontab` y añadimos la línea que deseemos automatizar y con la frecuencia deseada.
 
-![C9](https://github.com/Maverick94/swap1516/blob/master/practica2/imagenes/C9.png)
+![C9](https://github.com/Maverick94/swap1516/blob/master/practicas/practica2/imagenes/C9.png)
 
 
 Yo la he configurado para que se ejecute una copia de seguridad cada media hora todos los días del año infinitamente.
