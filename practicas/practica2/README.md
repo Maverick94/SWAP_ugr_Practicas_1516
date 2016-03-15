@@ -35,9 +35,9 @@ con el objetivo de comprobar que se va a copiar en la máquina 2 mediante la her
 
 `tar czf - directorio | ssh equipodestino 'cat > ~/tar.tgz'`
 
-sea demasiado ineficiente.
+es demasiado ineficiente.
 
-Para ello tecleo en la máquina 2 el comando:
+Para ello, tecleo en la máquina 2 el comando:
 `rsync -avz -e ssh root@machina1:/var/www/ /var/www/`
 para copiar la carpeta `pruebaCopia` de la máquina 1 a la máquina 2
 
@@ -74,7 +74,7 @@ Accedemos a crontab con el comando `nano /etc/crontab` y añadimos la línea que
 
 Yo la he configurado para que se ejecute una copia de seguridad cada media hora todos los días del año infinitamente.
 
-Por lo tanto, ya tenemos 2 máquinas haciendo de servidores funcionando donde la máquina 1 es la principal y va a contener el sitio web alojado y la máquina 2 va a estar realizando una copia identica de la máquina 1 cada media hora y estará preparada para actuar cuando la necesiten. 
+Por lo tanto, ya tenemos 2 máquinas haciendo de servidores funcionando, donde la máquina 1 es la principal y va a contener el sitio web alojado y la máquina 2 va a estar realizando una copia identica de la máquina 1 cada media hora y estará preparada para actuar cuando la necesiten. 
 
 
 ####Referencias:
