@@ -51,7 +51,7 @@ Vamos a generar el acceso sin contraseña para ssh desde la máquina 2. Realment
 
 Usamos el comando *ssh-keygen -t dsa* para crearla.
 
-![C7]((https://github.com/Maverick94/swap1516/blob/master/practica2/imagenes/C7.png)
+![C7](https://github.com/Maverick94/swap1516/blob/master/practica2/imagenes/C7.png)
 
 
 Utilizando el comando *chmod 600 ~/.ssh/authorized_keys* le estaremos dando los permisos que necesita. Por defecto sale con esos permisos dados pero yo ejecuto el comando de nuevo por si acaso...
@@ -69,7 +69,7 @@ Por lo tanto, ya podemos automatizar el proceso de copia del contenido */var/www
 
 Accedemos a crontab con el comando *nano /etc/crontab* y añadimos la línea que deseemos automatizar y con la frecuencia deseada.
 
-![C9]((https://github.com/Maverick94/swap1516/blob/master/practica2/imagenes/C9.png)
+![C9](https://github.com/Maverick94/swap1516/blob/master/practica2/imagenes/C9.png)
 
 
 Yo la he configurado para que se ejecute una copia de seguridad cada media hora todos los días del año infinitamente.
