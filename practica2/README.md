@@ -1,5 +1,5 @@
 ##Práctica 2. Clonar la información de un sitio web
-###Andrés Gallardo Molina
+###SWAP 2015/2016
 
 
 Lo primero que vamos a hacer es instalar *Ubuntu server 14.04* en dos máquinas virtuales. Yo he usado *VirtualBox*.
@@ -77,7 +77,7 @@ Yo la he configurado para que se ejecute una copia de seguridad cada media hora 
 Por lo tanto, ya tenemos 2 máquinas haciendo de servidores funcionando donde la máquina 1 es la principal y va a contener el sitio web alojado y la máquina 2 va a estar realizando una copia identica de la máquina 1 cada media hora y estará preparada para actuar cuando la necesiten. 
 
 
-#####Referencias:
+####Referencias:
 
 [Configuración red interna en VirtualBox](http://www.ccamposfuentes.es/2014/03/12/configurar-red-interna-virtualbox/)
 
