@@ -6,7 +6,7 @@ Teniendo las 3 máquinas creadas desde la práctica anterior, generamos una nuev
 
 Una vez creada, voy a crear un archivo ejemplo html para todas las pruebas 
 
-[!C1](https://github.com/Maverick94/swap1516/blob/master/practicas/practica4/imagenes/C1.png)
+![C1](https://github.com/Maverick94/swap1516/blob/master/practicas/practica4/imagenes/C1.png)
 -------------------------
 ###Apache Benchmark
 
@@ -18,9 +18,9 @@ tenemos que lanzar el comando:
 
 Lo haré 3 veces 10 iteraciones cada una. 1) Para el servidor sólo 2) para el servidor con nginx y 3) para el servidor con haproxy.
 
-[!TABLA](https://github.com/Maverick94/swap1516/blob/master/practicas/practica4/imagenes/Tablas.png)
+![TABLA](https://github.com/Maverick94/swap1516/blob/master/practicas/practica4/imagenes/Tablas.png)
 
-[!GRAFICA](https://github.com/Maverick94/swap1516/blob/master/practicas/practica4/imagenes/Graficas.png)
+![GRAFICA](https://github.com/Maverick94/swap1516/blob/master/practicas/practica4/imagenes/Graficas.png)
 
 
 -------------------------
@@ -36,8 +36,8 @@ Vamos a lanzar , como antes, 10 lanzamientos por cada tipo de servidor.
 
 y obtenemos los siguientes resultados:
 
-[!Tabla 2](https://github.com/Maverick94/swap1516/blob/master/practicas/practica4/imagenes/TAbla%202%20%28siesgue%29.png)
+![Tabla 2](https://github.com/Maverick94/swap1516/blob/master/practicas/practica4/imagenes/TAbla%202%20%28siesgue%29.png)
 
-[!Grafica](https://github.com/Maverick94/swap1516/blob/master/practicas/practica4/imagenes/Grafica%20siesgue.png)
+![Grafica](https://github.com/Maverick94/swap1516/blob/master/practicas/practica4/imagenes/Grafica%20siesgue.png)
 
 
