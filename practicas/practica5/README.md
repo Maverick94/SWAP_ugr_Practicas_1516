@@ -75,7 +75,7 @@ vamos a realizar las mismas configuraciones en el esclavo pero cambiando una cos
 
 Reiniciamos y...
 
-![C7](https://github.com/Maverick94/swap1516/blob/master/practicas/practica5/imagenes/C7.png)
+![C7](https://github.com/Maverick94/swap1516/blob/master/practicas/practica5/imagenes/c7.png)
 
 
 Vamos a la máquina master para configurar el acceso del esclavo. 
@@ -91,7 +91,7 @@ Y vamos a hacer lo siguiente dentro de sql
   mysql> SHOW MASTER STATUS;
 ```
 
-![C9](https://github.com/Maverick94/swap1516/blob/master/practicas/practica5/imagenes/C9.png)
+![C9](https://github.com/Maverick94/swap1516/blob/master/practicas/practica5/imagenes/C9.PNG)
 
 
 Por últmo vamos al esclavo a probar suerte....
@@ -106,8 +106,7 @@ bin.000001', MASTER_LOG_POS=501,
 MASTER_PORT=3306;
 
 ```
-
-
+![C10](https://github.com/Maverick94/swap1516/blob/master/practicas/practica5/imagenes/C10.PNG)
 
 
 
