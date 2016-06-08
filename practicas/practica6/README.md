@@ -12,12 +12,12 @@ vamos a crear el RAID 1 con el comando
 
 `sudo mdadm -C /dev/md0 --level=raid1 --raid -devices=2 /dev/sdb /dev/sdc`
 
-[!C1]
+[!C1](https://github.com/Maverick94/swap1516/blob/master/practicas/practica6/imagenes/C1.png)
 
 
 Una vez creado, le damos formato
 
-[!C2]
+[!C2](https://github.com/Maverick94/swap1516/blob/master/practicas/practica6/imagenes/C2.png)
 
 
 vamos a crear un directorio ahora con los comandos
@@ -25,16 +25,16 @@ vamos a crear un directorio ahora con los comandos
 `sudo mkdir /dat`
 `sudo mount /dev/md0 /dat`
 
-[!C3]
+[!C3](https://github.com/Maverick94/swap1516/blob/master/practicas/practica6/imagenes/C3.png)
 
 
 Para finalizar el proceso, conviene configurar el sistema para que monte el dispositivo RAID creado al arrancar el sistema.
 
-[!C4]
+[!C4](https://github.com/Maverick94/swap1516/blob/master/practicas/practica6/imagenes/C4.png)
 
 y al final del `/etc/fstab` anotaremos lo siguiente:
 
-[!C5]
+[!C5](https://github.com/Maverick94/swap1516/blob/master/practicas/practica6/imagenes/C5.png)
 
 Vamos a simular un fallo de disco y una retirada en caliente 
 
@@ -47,7 +47,7 @@ y
 `sudo mdadm --manage --remove /dev/md0 /dev/sdb`
 respectivamente
 
-[!C6]
+[!C6](https://github.com/Maverick94/swap1516/blob/master/practicas/practica6/imagenes/C6.png)
 
 
 Y vamos a añadir  tambien en caliente otro disco. 
@@ -55,5 +55,5 @@ Y vamos a añadir  tambien en caliente otro disco.
 `sudo mdadm --manage --add /dev/md0 /dev/sdb`
 
 
-[!C7]
+[!C7](https://github.com/Maverick94/swap1516/blob/master/practicas/practica6/imagenes/C7.png)
 
