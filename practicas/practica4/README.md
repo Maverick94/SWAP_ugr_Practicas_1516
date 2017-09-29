@@ -1,4 +1,4 @@
-##Práctica 4. Comprobar el rendimiento de servidores web
+## Práctica 4. Comprobar el rendimiento de servidores web
 
 El objetivo de esta práctica es medir el rendimiento de los servidores con dos software diferentes. Apache Benchmark y Siege
 
@@ -8,7 +8,7 @@ Una vez creada, voy a crear un archivo ejemplo html para todas las pruebas
 
 ![C1](https://github.com/Maverick94/swap1516/blob/master/practicas/practica4/imagenes/C1.png)
 -------------------------
-###Apache Benchmark
+### Apache Benchmark
 
 
 Vamos a probar el rendimiento con Apache Benchmark
@@ -25,7 +25,7 @@ Lo haré 3 veces 10 iteraciones cada una. 1) Para el servidor sólo 2) para el s
 
 -------------------------
 
-####Siege
+#### Siege
 
 
 Vamos a hacerlo ahora con siege.
