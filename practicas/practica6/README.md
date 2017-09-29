@@ -1,4 +1,4 @@
-##Práctica 6. Discos en RAID
+## Práctica 6. Discos en RAID
 
 Configurar dos discos en RAID 1. Los discos se añadirán a un sistema ya instalado y funcionando, de forma que en total tendremos tres discos.
 
