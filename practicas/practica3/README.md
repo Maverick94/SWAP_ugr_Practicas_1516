@@ -1,5 +1,5 @@
-##Práctica 3. Práctica Balanceo de carga
-###SWAP 2015/2016
+## Práctica 3. Práctica Balanceo de carga
+### SWAP 2015/2016
 
 
 Partimos de las dos máquinas que he desarrollado en la [Práctica 2](https://github.com/Maverick94/swap1516/tree/master/practicas/practica2) 
