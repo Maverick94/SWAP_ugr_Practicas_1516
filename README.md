@@ -1,10 +1,10 @@
-#Servidores Web de Altas Prestaciones 15/16
+# Servidores Web de Altas Prestaciones 15/16
 
 Respositorio donde voy a desarrollar la asignatura.
 
 
 
-###Prácticas
+### Prácticas
 
 * [Práctica 1](https://github.com/Maverick94/swap1516/tree/master/practicas/practica1)
 * [Práctica 2](https://github.com/Maverick94/swap1516/tree/master/practicas/practica2)
@@ -14,6 +14,6 @@ Respositorio donde voy a desarrollar la asignatura.
 * [Práctica 6](https://github.com/Maverick94/swap1516/tree/master/practicas/practica6)
 
 
-###Trabajos/Ejercicios
+### Trabajos/Ejercicios
 
 * [Trabajo Final](https://github.com/Maverick94/swap1516/tree/master/trabajos/trabajo_asignatura_netflix)
