@@ -1,9 +1,9 @@
-##Práctica 5. Replicación de bases de datos MySQL
+## Práctica 5. Replicación de bases de datos MySQL
 
 
 El objetivo de esta práctica es poder tener un "margen de maniobra" cuando perdamos un servidor de base de datos. Para ello vamos a utilizar 2 servidores, uno principal y otro secundario. El principal mantendra la base de datos y el segundo realizará copias del primero. Vamos a hacerlo de dos maneras, la primera usando mysqldump y la segunda, automatizando el proceso para que cada sentencia que se introduzca en el servidor principal se replique en el secundario al instante. Vamos a usar una Filosofía *Master-Slave*
 
-####Forma Manual (MySQLDUMP)
+#### Forma Manual (MySQLDUMP)
 
 
 
@@ -56,7 +56,7 @@ entramos para comprobar que todo esta correcto y:
 Hemos replicado la base de datos de forma manual. Vamos a automatizar el proceso.
 
 -------------------------
-####Forma Automática (MySQLDUMP)
+#### Forma Automática (MySQLDUMP)
 
 Vamos a comenzar accediendo a `/etc/mysql/my.cnf`
 
